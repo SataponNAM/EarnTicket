@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("pic/barbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 999;
+    transition: top 0.5s ease-in-out;
+    height: 132px;
+}
+
+header.hide {
+    top: -132px;
+}
+
+header img {
+    width: 70px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 1400px;
+}
+
+nav li {
+    margin: 0 20px;
+    position: relative;
+}
+
+nav li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fc0;
+    transition: width 0.3s ease-in-out;
+}
+
+nav li a:hover {
+    color: #fc0;
+}
+
+nav li a:hover::after {
+    width: 100%;
+}

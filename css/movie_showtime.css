@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    background-image: url('pic/topbg.png'), url('pic/downbg.png');
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-position: center top 132px , center bottom;
+    background-size: 100%;
+    background-attachment: scroll, scroll; /* set background-attachment property */
+    color: white;
+}
+
+.menubar-container nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 1400px;
+    margin-bottom: 0;
+}
+
+.container {
+    margin-top: 150px;
+    justify-content: center;
+    display: block;
+    flex-wrap: wrap;
+}
+
+.movie-info {
+    height: auto;
+    margin: 10px 10px 3rem 10px;
+    text-align: center;
+    display: flex;
+}
+
+.info {
+    display: block;
+    text-align: start;
+    margin: 2rem 2rem;
+}
+
+.movie-info img{
+    border-radius: 10px;
+    width: 20rem;
+}
+
+.slick-slide {
+    width: auto;
+    margin: 9px 12px;
+    padding: 8px 0;
+}
+
+.btn-secondary {
+    color: white;
+    background-color: #7a1a4d;
+    text-align: center;
+    width: 150px;
+}
+
+.btn-secondary:hover{
+    color: #7a1a4d;
+    background-color: #fc0;
+}
+
+

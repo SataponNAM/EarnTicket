@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    background-image: url('pic/topbg.png'), url('pic/downbg.png');
+    background-color: #131313 !important;
+    background-repeat: no-repeat;
+    background-position: center top 132px , center bottom;
+    background-size: 100%;
+    background-attachment: scroll, scroll; /* set background-attachment property */
+}
+
+.menubar-container nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: 0;
+    padding: 0;
+    margin-right: 1422px;
+    margin-bottom: 0;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+.form-container{
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.form-container form{ 
+    width: 400px;
+}
+
+.form-container form h2{ 
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.form-container form input{
+    margin: 15px 0;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 45px;
+    padding-left: 15px;
+}
+
+.form-container form input:focus {
+    border-color: #fc0;
+    box-shadow: 0 0 10px 0 #fc0;
+}
+
+.form-container form button{
+    margin-bottom: 10px;
+    width: 400px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    background-color: #7a1a4d;
+}
+
+.form-container form button:hover{
+    color: #7a1a4d;
+    background-color: #fc0;
+}
+
+.form-container p{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.form-container a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: rgb(255, 242, 188);
+    font-size: 20px;
+    line-height: 2;
+}
+
+.form-container a::after {
+    content: "";
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #fc0;
+    transition: width 0.3s ease-in-out;
+}
+
+.form-container a:hover{
+    color: #fc0;
+}
+
+.form-container a:hover::after {
+    width: 100%;
+}
+

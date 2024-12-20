@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@600&display=swap');
+*{
+    font-family: 'Noto Sans Thai', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+}
+
+body{
+    height: 100%;
+    background-image: url('pic/topbg.png'), url('pic/downbg.png');
+    background-color: #131313;
+    background-repeat: no-repeat;
+    background-position: center top 132px , center bottom;
+    background-size: 100%;
+    background-attachment: scroll, scroll; /* set background-attachment property */
+}
+
+.container {
+    margin-top: 150px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie-list {
+    width: 18%;
+    height: auto;
+    margin: 10px;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    
+}
+
+.movie-list img{
+    border-radius: 10px;
+}
+
+.movie-name{
+    font-size: 18px;
+    color: white;
+    margin-top: 5px;
+}
+
+.movie-list .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+
+.movie-list:hover .overlay {
+    opacity: 1;
+}
+
+.movie-list .movie-info {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: left;
+    margin-left: 10px;
+}
+
+.movie-list .movie-info h3 {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.movie-list .movie-info p {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
